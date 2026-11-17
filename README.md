@@ -56,16 +56,26 @@ data engineers use daily, and you should be able to explain each one.
 | 7 | README | Architecture diagram, setup guide, honest production notes | not started |
 
 After each stage you get a plain-language explanation and the interview questions
-it prepares you for.
+it prepares you for. These are collected in [docs/interview-notes.md](docs/interview-notes.md).
+
+## How work is tracked
+
+Every piece of work is an issue in the Linear project
+[evan-personal-data](https://linear.app/proudlyhumantm/project/evan-personal-data-1b8116258582).
+Each milestone is one stage above. One issue gets one branch and one pull request,
+and merging the PR closes the issue. The full workflow is in
+[docs/development-process.md](docs/development-process.md).
 
 ## What to do right now
 
-1. Install uv: `brew install uv`
-2. Open **Docker Desktop**, and set memory to 8 GB (Settings → Resources).
-3. Follow **[infra/README.md](infra/README.md)** from top to bottom. It creates the
-   Google Cloud project, one command at a time, with a note on what each one does.
-4. When the last check in step 9 prints `sa-pipeline@…`, Stage 1 is done.
-   Tell Claude, and Stage 2 starts.
+Work through the small Linear issues in order. Each one says why it matters and how
+to check it's done.
+
+1. **EVA-50, EVA-51:** install uv, and start Docker Desktop with 8 GB of memory.
+2. **EVA-52 to EVA-62:** set up Google Cloud, one step per issue, following
+   **[infra/README.md](infra/README.md)**.
+3. When EVA-62's check prints `sa-pipeline@…`, Setup is done. Tell Claude, and
+   milestone 2 (the road to the MCP checkpoint) starts with EVA-63.
 
 ## Repo layout
 
