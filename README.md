@@ -68,13 +68,14 @@ and merging the PR closes the issue. The full workflow is in
 
 ## What to do right now
 
-1. **EVA-36:** install uv (`brew install uv`), then open **Docker Desktop** and set
-   memory to 8 GB (Settings → Resources).
-2. **EVA-37:** follow **[infra/README.md](infra/README.md)** from top to bottom. It
-   creates the Google Cloud project, one command at a time, with a note on what each
-   one does.
-3. When the last check in step 9 prints `sa-pipeline@…`, Stage 1 is done.
-   Tell Claude, and Stage 2 (EVA-38) starts.
+Work through the small Linear issues in order. Each one says why it matters and how
+to check it's done.
+
+1. **EVA-50, EVA-51:** install uv, and start Docker Desktop with 8 GB of memory.
+2. **EVA-52 to EVA-62:** set up Google Cloud, one step per issue, following
+   **[infra/README.md](infra/README.md)**.
+3. When EVA-62's check prints `sa-pipeline@…`, Setup is done. Tell Claude, and
+   milestone 2 (the road to the MCP checkpoint) starts with EVA-63.
 
 ## Repo layout
 

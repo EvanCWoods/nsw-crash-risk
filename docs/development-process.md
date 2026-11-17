@@ -16,8 +16,22 @@ Work is planned in Linear and shipped through GitHub pull requests.
 | **In Progress** | Someone is working on it, and it has a branch. |
 | **Done** | Its pull request is merged into `main`. |
 
-Some issues are **"You do this"** issues: installing tools or running `gcloud`/`bq`
-commands. Those have no branch or PR. Tick the checklist and move the issue to Done.
+Work is broken into **small steps**. Each step does one thing, takes minutes to
+review, and has a **Done when** check you can run yourself. Steps appear in Linear in
+one of two ways:
+
+- **Sub-issues** under a parent issue (for example, EVA-63 to EVA-68 under EVA-38).
+- **Checklist items** inside a parent issue (for example, steps 1–6 in EVA-39). We use
+  these because the workspace has reached the free plan's 250-issue limit. They work
+  the same way: one step, one branch, one PR.
+
+Some steps are **"You do this"**: installing tools, or running `gcloud`/`bq` commands.
+Those have no branch or PR. Run them, check the "Done when", then tick the step or
+move it to Done.
+
+The plan runs to a **checkpoint**: milestone 2 ends when Claude Desktop answers a
+question about NSW crashes through our MCP server. Later milestones get split into
+small steps once we reach them.
 
 ## The workflow for one issue
 
@@ -44,6 +58,18 @@ Todo ──► In Progress ──► branch ──► commits ──► pull req
    delete the branch.
 7. **Close out:** the issue moves to *Done*. The stage explanation and interview
    questions go into [interview-notes.md](interview-notes.md).
+
+### Checklist steps
+
+A checklist step uses its parent issue's ID, plus the step number:
+
+- Branch: `evan/eva-39-2-xlsx-to-parquet`
+- Commits: `EVA-39: Add xlsx to Parquet helper`
+- PR title: `EVA-39 (step 2/6): xlsx to Parquet helper`
+- PR description: `Part of EVA-39`. Use `Fixes EVA-39` only on the **last** step, so
+  the parent issue closes when the final PR merges.
+
+After each merge, tick the step in the parent issue.
 
 ## Who does what
 
