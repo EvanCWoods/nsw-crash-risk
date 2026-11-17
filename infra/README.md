@@ -53,6 +53,11 @@ gcloud billing accounts list
 gcloud billing projects link "$GCP_PROJECT_ID" --billing-account="$GCP_BILLING_ACCOUNT"
 ```
 
+**Created the project in the Cloud Console instead?** That's fine. Skip
+`projects create` and just run `gcloud config set project "$GCP_PROJECT_ID"`.
+The Console usually links billing for you; check with
+`gcloud billing projects describe "$GCP_PROJECT_ID"`.
+
 - `projects create`: a project is the container for every resource and every bill.
   Giving this work its own project means deleting it later removes everything.
 - `billing accounts list`: shows your billing account ID. Put it in `.env` as

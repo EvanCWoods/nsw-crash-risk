@@ -75,8 +75,9 @@ After each merge, tick the step in the parent issue.
 
 | Evan | Claude |
 |---|---|
-| Runs `gcloud` / `bq` commands | Writes the commands and explains each one |
-| Reviews and merges PRs | Moves issues, creates branches, writes code and tests, opens PRs |
+| Writes the code and tests | Explains each step, points to the docs, helps when stuck |
+| Runs every command (git, gcloud, bq, docker) | Gives the commands and explains what each one does |
+| Moves issues, creates branches, opens and merges PRs | Reviews PRs, and handles doc and housekeeping edits when asked |
 | Decides anything that could cost money | Flags anything that could cost money before it happens |
 
 ## Definition of done
